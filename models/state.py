@@ -5,6 +5,6 @@ from models.base_model import BaseModel
 
 class State(BaseModel):
     """    Class Attributes:
-    		(string) name: initialized as empty string    """
+            (string) name: initialized as empty string    """
 
     name = ""

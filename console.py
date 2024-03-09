@@ -20,7 +20,7 @@ class HBNBCommand(cmd.Cmd):
 
     prompt = '(hbnb) '
     userClasses = ["BaseModel", "User", "Place", "State", "Amenity", "Review",
-                 "City"]
+                   "City"]
 
     def do_EOF(self, line):
         """Exit terminal"""
@@ -44,11 +44,11 @@ class HBNBCommand(cmd.Cmd):
 
     def do_create(self, classname):
         """create a new instance of """
-        if  not len(classname):
+        if not len(classname):
             print('** class name missing **')
         elif classname not in self.userClasses:
-                print('** class doesn\'t exist **')
-                return False
+            print('** class doesn\'t exist **')
+            return False
         else:
             new = eval("{}()".format(classname))
             new.save()
@@ -179,7 +179,7 @@ class HBNBCommand(cmd.Cmd):
             try:
                 setattr(clschange, attributename, float(updatevalue))
                 storage.save()
-            except:
+            except ValueError:
                 setattr(clschange, attributename, str(updatevalue))
                 storage.save()
 
