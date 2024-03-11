@@ -4,8 +4,7 @@ from models.base_model import BaseModel
 
 
 class User(BaseModel):
-    """Class for managing user objects
-    Represent a User.
+    """Class epresent a User.
     Attributes:
         email (str): the email of the user.
         password (str): The password of the user.
