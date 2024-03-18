@@ -7,3 +7,21 @@
     border: 1px solid #DDDDDD;
     border-radius: 4px;
 }
+
+button {
+    font-size: 18px;
+    background-color: #FF5A5F;
+    color: #FFFFFF;
+    height: 48px;
+    border: none;
+    border-radius: 4px;
+    right: 30px;
+    opacity: 90%;
+    margin: 12px 30px;
+    width: 20%;
+    position: absolute;
+}
+
+button:hover {
+    opacity: 90%;
+}
